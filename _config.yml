@@ -1,15 +1,13 @@
 # Site settings
 title: Portfolio 
-description: Hey I am Daksh Patel.
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+description: Hey I am Nikhil.
 
 # User settings
-username: Daksh Patel
+username: Nikhil Singh Thakur
 user_description:
-user_title: Data Science/Machine Learning
-email: iamdakshpatel@gmail.com
-twitter_username: hi5daksh
-github_username:  helloitsdaksh
+user_title: AI Engineer/Machine Learning
+email: nikhil.thakur97@gmail.com
+X_username: nikhil.thakur97
+github_username:  nikhilthakur97
 
 exclude: ['package.json', 'src' , 'node_modules']

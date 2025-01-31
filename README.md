@@ -20,10 +20,11 @@
 * Operating System: Linux, macOS, Windows
 
  ## **WHAT I DO**
-- 🔭 I’m currently working as Research Assistant at Keck School of Medicine USC. 
-- 🌱 I’m currently learning Deep Learning and DSA
-- 👯 I’m looking to collaborate on projects based on Python
+- 🔭 I’m currently working on Generative Adversarial Network (GAN) project
+- 🌱 I’m currently learning 🌱 Reinforcement learning, cloud deployment (AWS, GCP), and computer vision. DSA
+- 👯 I’m looking to collaborate on AI and machine learning projects
+- 💬 Ask me about AI & Machine Learning Python & TensorFlow Web Development Cloud Deployment (AWS, GCP) Computer Vision
 - 📫 How to reach me:  
 
 ## **My Github Stats**:
-<img src = 'https://github-readme-streak-stats.herokuapp.com/?user=helloitsdaksh&show_icons=true&theme=dark'/>
+<img src = 'https://github-readme-streak-stats.herokuapp.com/?user=nikhilthakur97&show_icons=true&theme=dark'/>
