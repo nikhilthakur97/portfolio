@@ -52,10 +52,10 @@
 <!-- Third Certification -->
 <div class="user-projects">
   <div id="slider3" class="slider">
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider3/page1.jpeg" /></div>
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider3/page2.jpeg" /></div>
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider3/page3.jpeg" /></div>
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider3/page4.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider3/page1.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider3/page2.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider3/page3.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider3/page4.jpeg" /></div>
   </div>
   <div class="contents">
     <h3>Getting Started with AI on Jetson Nano</h3>
@@ -87,10 +87,10 @@
 <!-- Fifth Certification -->
 <div class="user-projects">
   <div id="slider5" class="slider">
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider5/page1.jpeg" /></div>
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider5/page2.jpeg" /></div>
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider5/page3.jpeg" /></div>
-    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider5/page4.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider5/page1.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider5/page2.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider5/page3.jpeg" /></div>
+    <div class="slide images-left"><img alt="Page Arizona" src="assets/img/slider5/page4.jpeg" /></div>
   </div>
   <div class="contents">
     <h3>Python for Computer Vision with OpenCV and Deep Learning</h3>
@@ -184,23 +184,11 @@
   .slider {
     max-width: 100%;
     position: relative;
-    display: flex; /* Flexbox for aligning images */
-    overflow: hidden; /* Hide images that overflow */
     margin-bottom: 20px;
   }
 
   .slide {
-    flex-shrink: 0; /* Prevent the slides from shrinking */
-    width: 100%; /* Make each image take the full width of the slider */
-    display: none; /* Hide the images by default */
-  }
-
-  .images-left {
-    justify-content: flex-start; /* Align images to the left */
-  }
-
-  .images-right {
-    justify-content: flex-end; /* Align images to the right */
+    display: none;
   }
 
   .arrow {
@@ -241,15 +229,15 @@
 
   @keyframes animate {
     0% {
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px, -20px);
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
     }
     50% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      opacity: 0;
-      transform: rotate(45deg) translate(20px, 20px);
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
     }
   }
 </style>
