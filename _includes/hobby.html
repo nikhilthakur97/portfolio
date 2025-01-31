@@ -184,11 +184,23 @@
   .slider {
     max-width: 100%;
     position: relative;
+    display: flex; /* Flexbox for aligning images */
+    overflow: hidden; /* Hide images that overflow */
     margin-bottom: 20px;
   }
 
   .slide {
-    display: none;
+    flex-shrink: 0; /* Prevent the slides from shrinking */
+    width: 100%; /* Make each image take the full width of the slider */
+    display: none; /* Hide the images by default */
+  }
+
+  .images-left {
+    justify-content: flex-start; /* Align images to the left */
+  }
+
+  .images-right {
+    justify-content: flex-end; /* Align images to the right */
   }
 
   .arrow {
@@ -229,15 +241,15 @@
 
   @keyframes animate {
     0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
     }
     50% {
-        opacity: 1;
+      opacity: 1;
     }
     100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
     }
   }
 </style>
