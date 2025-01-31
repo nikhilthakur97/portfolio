@@ -3401,7 +3401,7 @@ sub,sup{
 @media only screen and (min-width:550px){
     .header .site-title{
         margin:0;
-        font-size:100px
+        font-size:70px
     }
 }
 .header .site-description{
