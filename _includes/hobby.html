@@ -1,0 +1,161 @@
+<div class="user-details">
+  <h1>My Hobby</h1>
+</div>
+<div class="arrow">
+    <button onclick="scrollToTop()" id="myBtn" style="display: none;">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</div>
+<div>
+      <p align="justify">Exploring the wonders of nature has always been my passion. From the lush forests to the towering mountains and serene coastlines, there's something truly magical about immersing oneself in the beauty of the natural world. Every journey outdoors brings a sense of wonder and excitement, igniting my curiosity and inspiring me to capture the essence of each moment through photography.</p>
+</div>
+<div class="user-projects">
+  <div id="slider1" class="slider">
+    <div class="slide images-left"><img alt="Bryce Canyon National Park" src="assets/img/slider1/bryce1.jpeg" /></div>
+    <div class="slide images-left"><img alt="Bryce Canyon National Park" src="assets/img/slider1/bryce2.jpeg" /></div>
+    <div class="slide images-left"><img alt="Bryce Canyon National Park" src="assets/img/slider1/bryce3.jpeg" /></div>
+    <div class="slide images-left"><img alt="Bryce Canyon National Park" src="assets/img/slider1/bryce4.jpeg" /></div>
+    <div class="slide images-left"><img alt="Bryce Canyon National Park" src="assets/img/slider1/zion1.jpeg" /></div>
+    <div class="slide images-left"><img alt="Bryce Canyon National Park" src="assets/img/slider1/zion2.jpeg" /></div>
+  </div>
+  <div class="contents-right">
+    <h3>Exploring National Parks</h3>
+    <ul>
+      <li>Landscape Photography, Nature, Adventure</li>
+    </ul>
+    <p>As an avid photographer, I love to capture the beauty of nature through my lens. Whether it's the majestic arches of Bryce Canyon National Park or the serene tranquility of hidden caves, each photograph tells a unique story and allows me to share my passion for exploration and adventure with others.</p>
+    <!-- <a class="project-link" href="https://doi.org/10.1007/978-981-99-1726-6_6">Check it out</a> -->
+  </div>
+</div>
+
+<div class="user-projects">
+  <div id="slider2" class="slider">
+    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider2/page1.jpeg" /></div>
+    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider2/page2.jpeg"/></div>
+    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider2/page3.jpeg" /></div>
+    <div class="slide images-right"><img alt="Page Arizona" src="assets/img/slider2/page4.jpeg"/></div>
+  </div>
+ <div class="contents">
+    <h3>Exploring Nature through my Lens</h3>
+    <ul>
+      <li>Trekking, Hiking, Peace</li> <!-- Added trekking and hiking -->
+    </ul>
+    <p>As an enthusiastic photographer, I'm drawn to the captivating landscapes of Page, Arizona. From the surreal beauty of Antelope Canyon to the majestic vistas of Horseshoe Bend, each click of my camera captures the essence of this remarkable place. Additionally, I enjoy trekking through the rugged terrain and hiking along the scenic trails, immersing myself in the natural beauty and adventure of the region.</p>
+</div>
+</div>
+
+
+
+<script>
+  // JavaScript for slider functionality
+    // JavaScript for slider functionality
+  let slideIndex1 = 0;
+  showSlides("slider1");
+
+  let slideIndex2 = 0;
+  showSlides("slider2");
+
+  function showSlides(sliderId) {
+    let slides = document.getElementById(sliderId).getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    if (sliderId === "slider1") {
+      slideIndex1++;
+      if (slideIndex1 > slides.length) { slideIndex1 = 1 }
+      slides[slideIndex1 - 1].style.display = "block";
+      setTimeout(() => showSlides(sliderId), 2000); // Change image every 2 seconds
+    } else if (sliderId === "slider2") {
+      slideIndex2++;
+      if (slideIndex2 > slides.length) { slideIndex2 = 1 }
+      slides[slideIndex2 - 1].style.display = "block";
+      setTimeout(() => showSlides(sliderId), 3000); // Change image every 3 seconds
+    }
+  }
+// Function to scroll to the top of the page
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  let mybutton = document.getElementById("myBtn");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+
+
+<style>
+  /* CSS for slider */
+  .slider {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .slide {
+    display: none;
+  }
+
+
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+}
+
+.arrow button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 20px; /* Padding from both bottom and right */
+    border-radius: 4px;
+    transform: rotate(180deg);
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid indianred;
+    border-right: 5px solid indianred;
+    transform: rotate(0deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+</style>
