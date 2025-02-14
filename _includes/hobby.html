@@ -197,12 +197,6 @@
 <style>
   /* CSS for slider */
 
-  .slider .slide {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
 
   .slider {
     max-width: 100%;
@@ -211,8 +205,10 @@
   }
 
   .slide {
-    display: none;
-  }
+    display: block !important;
+}
+
+  
 
   /* Make the images have the same size */
   .slider img {
